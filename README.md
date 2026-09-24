@@ -54,19 +54,49 @@ SHAFT VISUALIZATION
 For a solid circular shaft subjected to torque, the maximum shear stress is calculated using:
 
 $$
-\tau_{max} = \frac{16T}{\pi d^3}
+\tau_{\max} = \frac{16T}{\pi d^3}
 $$
 
 where:
 
-* \(T\) = applied torque
-* \(d\) = shaft diameter
-* \(\tau_{max}\) = maximum shear stress
+* $T$ = applied torque
+* $d$ = shaft diameter
+* $\tau_{\max}$ = maximum shear stress
 
 The polar second moment of area for a solid circular shaft is:
 
 $$
 J = \frac{\pi d^4}{32}
+$$
+
+where:
+
+* $J$ = polar second moment of area
+* $d$ = shaft diameter
+
+The general torsion relationship is:
+
+$$
+\tau = \frac{Tr}{J}
+$$
+
+where:
+
+* $\tau$ = shear stress
+* $T$ = applied torque
+* $r$ = radial distance from the shaft center
+* $J$ = polar second moment of area
+
+For a solid circular shaft, the maximum shear stress occurs at the outer surface where:
+
+$$
+r = \frac{d}{2}
+$$
+
+Substituting the polar second moment of area gives:
+
+$$
+\tau_{\max} = \frac{16T}{\pi d^3}
 $$
 
 The factor of safety is calculated as:
@@ -80,7 +110,7 @@ For this prototype, an allowable shear stress of **150 MPa** is used.
 The design passes when:
 
 $$
-FOS \geq FOS_{required}
+FOS \geq FOS_{\text{required}}
 $$
 
 ---
@@ -89,7 +119,7 @@ $$
 
 The project uses a **Decision Tree Classifier** to predict whether a shaft design will pass or fail.
 
-### Input features
+### Input Features
 
 * Shaft diameter
 * Applied torque
@@ -361,8 +391,6 @@ Therefore, the results should be treated as **preliminary engineering analysis a
 ---
 
 ## Future Development
-
-Possible future versions include:
 
 ### V2 — Advanced Mechanical Analysis
 

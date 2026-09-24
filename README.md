@@ -507,22 +507,6 @@ Visualization
 The visualization provides a graphical representation of the shaft geometry and helps connect the numerical engineering results with the physical component being analyzed.
 
 ---
-
-## Screenshots
-
-### AI Mechanical CAD Assistant
-
-![AI Mechanical CAD Assistant GUI](screenshots/gui.png)
-
-### Analysis Results
-
-![Analysis Results](screenshots/analysis_results.png)
-
-### Shaft Visualization
-
-![Shaft Visualization](screenshots/shaft_visualization.png)
-
----
 ## Screenshots
 
 ### AI Mechanical CAD Assistant
